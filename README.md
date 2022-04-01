@@ -89,7 +89,7 @@ Type$$c_i$$| low| low| upp| low| low| num| low| low| sym| upp| num| low| low| up
 ct|N|B|h|G|I|‚|M|T| |k|©|H|H|d|_|
 
 
-# Configuration
+## Configuration
 The program allows you to encrypt and decrypt a text message (plaintext) provided by the user as a string type myplaintext variable (.string in RIPES). 
 * A. Substitute cipher / Caesar cipher
 * B. Block cipher
@@ -99,4 +99,10 @@ The program allows you to encrypt and decrypt a text message (plaintext) provide
 In addition to the variable myplaintext (maximum size 100 characters, characters c which can only be such that 32 ≤ cod (c) ≤ 127 to avoid special ASCII characters), the program requires an additional input that specifies how to apply the ciphers. This mycypher variable is a string S = "S 1...S n" made up of a maximum of 5 characters (therefore with 1≤n≤5), where each character S i (with 1≤i≤n) corresponds to one of the characters 'A', 'B', 'C', 'D', and identifies the cipher to be applied to the message. The order of the ciphers is therefore established by the order in which the characters appear in the string. Furthermore, each cipher returns a cyphertext which is a sequence of characters c t.c. 32 ≤ cod (c) ≤ 127.
 
 As an example, some possible keywords are reported: "C", or "ADC", or "DADD", .... For example, the encryption of the text message with the keyword "ADC" will determine the application of algorithm A, then of algorithm D (on the message already encrypted with A) and finally of algorithm C (on the message already encrypted first with A and then with D).
+
 The program considers the variables myplaintext and mycypher, applying the specified ciphers to produce a video output, the various cypthertext obtained after applying each cipher are separated by a newline. In the same way, the decryption functions are applied starting from the previously encrypted message in reverse order with respect to the ciphers. The last message printed on the screen corresponds to the original plaintext.
+
+## Assignment & report
+
+You can have a look at both the project [assignment](doc/Project_Assignment_aa_19-20.pdf) and the written [report](doc/Report.pdf), but beware that they have been written in the Italian.
+While all the souce code is well commented in English.
