@@ -5,7 +5,7 @@
     This repository contains the implementation for the laboratory project of Computer Architectures class at the University of Florence
   </p>
   <p align="center">
-    <img src="https://github.com/JohnnyInArt/computer-architectures-project/blob/main/resources/images/animation.gif" />
+    <img src="resources/imag/animation.gif" />
 </p>
 </div>
 
@@ -25,7 +25,7 @@
       </ul>
     </li>
     <li><a href="#running-instructions">Running instructions</a></li>
-    <li><a href="#assignment-&-report">Assignment & report</a></li>
+    <li><a href="#assignment-and-report">Assignment and report</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
@@ -44,7 +44,7 @@ It is a mono-alphabetic substitution cipher in which each letter of the plaintex
 
 Then, the standard 8-bit ASCII code of each character of the text message is changed by adding an integer constant K, modulo 256.
 
-For Example:
+>For Example:
 
 $$ pt= LOVE AssEMbLY \\  k = 1$$
 
@@ -132,7 +132,7 @@ As an example, some possible keywords are reported: "C", or "ADC", or "DADD", ..
 
 The program considers the variables myplaintext and mycypher, applying the specified ciphers to produce a video output, the various cypthertext obtained after applying each cipher are separated by a newline. In the same way, the decryption functions are applied starting from the previously encrypted message in reverse order with respect to the ciphers. The last message printed on the screen corresponds to the original plaintext.
 
-## Assignment & report
+## Assignment and report
 
 You can have a look at both the project [assignment](doc/Project_Assignment_aa_19-20.pdf) and the written [report](doc/Report.pdf), but beware that they have been written in Italian.
 While all the souce code is well commented in English.
