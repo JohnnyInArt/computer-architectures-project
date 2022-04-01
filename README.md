@@ -20,7 +20,7 @@
       <a href="#Description-of-the-ciphers">Description of the ciphers</a>
       <ul>
         <li><a href="#substitute-cipher">Substitute cipher / Caesar cipher</a></li>
-        <li><a href="#2.-block-cipher">2. Block cipher</a></li>
+        <li><a href="#block-cipher">Block cipher</a></li>
         <li><a href="#occurrences-cipher">Occurrences cipher</a></li>
         <li><a href="#dictionary-encryption">Dictionary encryption</a></li>
       </ul>
@@ -55,7 +55,7 @@ $$ pt= LOVE AssEMbLY \\  k = 1$$
 |Cod(k)|77|80|87|70|32|66|116|116|70|78|99|77|90|
 |Ct|M|P|W|F| |B|t|t|F|N|c|M|Z|
 
-### 2. Block cipher
+### Block cipher
 
 A block cipher encrypts by considering m characters for the block to be encrypted and k characters for the key to be used during encryption, returning m  characters in output for the cyphertext.
 
