@@ -1,11 +1,7 @@
-# 
-
-
-
 <br />
 <div align="center">
-  <h1 align="center">Computer Architectures Project</h1>
-  <p align="center">
+  <h1>Computer Architectures Project</h1>
+  <p>
     This repository contains the implementation for the laboratory project of Computer Architectures class at the University of Florence
   </p>
 </div>
@@ -19,7 +15,7 @@
     <li>
       <a href="#Description-of-the-ciphers">Description of the ciphers</a>
       <ul>
-        <li><a href="#substitute-cipher">Substitute cipher / Caesar cipher</a></li>
+        <li><a href="#substitute-cipher">Substitute cipher</a></li>
         <li><a href="#block-cipher">Block cipher</a></li>
         <li><a href="#occurrences-cipher">Occurrences cipher</a></li>
         <li><a href="#dictionary-encryption">Dictionary encryption</a></li>
@@ -39,7 +35,7 @@ In order to run the source code, download version v2.1.0 of the Ripes simuletor 
 
 RISC-V assembly code that simulates some encryption and decryption functions of a text message, interpreted as sequence of ASCII characters.
 
-### 1. Substitute cipher / Caesar cipher
+### Substitute cipher
 
 It is a mono-alphabetic substitution cipher in which each letter of the plaintext is replaced by the letter found a number of places later in the alphabet.
 
@@ -79,7 +75,7 @@ Calculate Cod (O) = 79, Cod (L) = 76, Cod (E) = 69 by consulting the ASCII table
 |Cod(key)|79|76|69|79|76|69|79|76|
 |Cod(ct)|150|158|134|147|161|137|163|145
 
-### 3. Occurrences cipher
+### Occurrences cipher
 
 Starting from the first character of the plaintext (at the position
 1), the message is encrypted as a sequence of strings separated by exactly 1 space:
@@ -99,7 +95,7 @@ $$ ct = "e-1-7\ x-2\ a-3\ m-4\ p-5\ l-6\ \ -8\ 1-9"$$
 * In the string "-8" the encoded character is the space, which appears in position 8 of the message.
 * In the string "1-9 the encoded character is '1', which appears in position 9 of the message.
 
-### 4. Dictionary encryption
+### Dictionary encryption
 
 Each possible ASCII symbol is mapped to another ASCII symbol according to a certain function defined by cases. It requires that the single ASCII characters $$c_i$$ of the string to be encoded belong to the reduced encoding $$ (0 ≤ cod (c_i) ≤ 127)$$
 
