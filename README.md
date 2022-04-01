@@ -46,12 +46,7 @@ Then, the standard 8-bit ASCII code of each character of the text message is cha
 
 For Example:
 
-&nbsp; &amp; &copy; &AElig; &Dcaron;
-&frac34; &HilbertSpace; &DifferentialD;
-&ClockwiseContourIntegral; &ngE;
 
-<p align="JUSTIFY"> A <sub>16</sub>
-</p>
 **pt= LOVE AssEMbLY**
 **k = 1**
 
@@ -67,7 +62,16 @@ A block cipher encrypts by considering m characters for the block to be encrypte
 
 The word is partitioned into nb blocks, obtained as nb = m / k rounded up to the integer.
 
-Each block in $$B = {b1, b_2,...,b_{nb}}$$ contains at most k consecutive elements of the string to be encrypted. Each element of each block is encrypted by adding the ASCII encoding of a key character to the ASCII encoding of the character.
+Each block in
+<p align="JUSTIFY"> {b
+   <sub>1</sub>
+   ,b
+   <sub>2</sub>
+   ,b
+   <sub>nb</sub>
+    }
+</p> 
+$$B = {b1, b_2,...,b_{nb}}$$ contains at most k consecutive elements of the string to be encrypted. Each element of each block is encrypted by adding the ASCII encoding of a key character to the ASCII encoding of the character.
 
 For each b_i in B(1 ≤ i ≤ nb) cb_i = cod(b_{ij} ) + cod(key_j ), 1 ≤ j ≤ k $$
 
