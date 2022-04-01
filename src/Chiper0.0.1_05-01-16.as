@@ -2,7 +2,7 @@
 #                      RISC-V Assembly Project
 #
 #                            Cipher Message
-#
+#  Tested on RIPES: v2.1.0-6-gac5e783
 # ===================================================================================================================================================
 .data
 errStr: .string "Invalid myplaintext string!"    # Output for myplaintext string when is incorrect

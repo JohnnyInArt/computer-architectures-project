@@ -1,4 +1,4 @@
-# Computer Architectures Project 
+# Computer Architectures Project
 
 This repository contains the implementation for the laboratory project of Computer Architectures class at the University of Florence
 
@@ -7,16 +7,17 @@ This repository contains the implementation for the laboratory project of Comput
 In order to run the source
 code, download version v2.1.0 of the Ripes simuletor on the relative [github page](https://github.com/mortbopet/Ripes/releases/tag/v2.1.0) build for the [RISC-V instruction set architecture](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf).
 
-# Description of the ciphers 
+# Description of the ciphers
 
 RISC-V assembly code that simulates some encryption and decryption functions of a text message, interpreted as sequence of ASCII characters.
-### 1. Substitute cipher / Caesar cipher 
 
-It is a mono-alphabetic substitution cipher in which each letter of the plaintext is replaced by the letter found a number of places later in the alphabet. 
+### 1. Substitute cipher / Caesar cipher
 
-Then, the standard 8-bit ASCII code of each character of the text message is changed by adding an integer constant K, modulo 256. 
+It is a mono-alphabetic substitution cipher in which each letter of the plaintext is replaced by the letter found a number of places later in the alphabet.
 
-#### For Example:
+Then, the standard 8-bit ASCII code of each character of the text message is changed by adding an integer constant K, modulo 256.
+
+For Example:
 
 $$ pt= LOVE AssEMbLY \\  k = 1$$
 
@@ -26,9 +27,9 @@ $$ pt= LOVE AssEMbLY \\  k = 1$$
 |Cod(k)|77|80|87|70|32|66|116|116|70|78|99|77|90|
 |Ct|M|P|W|F| |B|t|t|F|N|c|M|Z|
 
-### 2. Block cipher 
+### 2. Block cipher
 
-A block cipher encrypts by considering m characters for the block to be encrypted and k characters for the key to be used during encryption, returning m  characters in output for the cyphertext. 
+A block cipher encrypts by considering m characters for the block to be encrypted and k characters for the key to be used during encryption, returning m  characters in output for the cyphertext.
 
 The word is partitioned into nb blocks, obtained as nb = m / k rounded up to the integer.
 
@@ -37,11 +38,11 @@ $$ For\ each\ b_i\ in\ B(1 ≤ i ≤ nb) \\ cb_i = cod(b_{ij} ) + cod(key_j ), 1
 
 With cyphertext $$ ct = {cb_1, cb_2, ... cb_{nb}}$$ defined of nb blocks.
 
-#### For Example:
+For Example:
 
 $$ pt= GRADUATE \\  key = OLE$$
 
-Calculate Cod (O) = 79, Cod (L) = 76, Cod (E) = 69 by consulting the ASCII table 
+Calculate Cod (O) = 79, Cod (L) = 76, Cod (E) = 69 by consulting the ASCII table
 
 |Pt|G|R|A|D|U|A|T|E|
 |--|-|-|-|-|-|-|-|-|
@@ -50,15 +51,16 @@ Calculate Cod (O) = 79, Cod (L) = 76, Cod (E) = 69 by consulting the ASCII table
 |Cod(key)|79|76|69|79|76|69|79|76|
 |Cod(ct)|150|158|134|147|161|137|163|145
 
-### 3. Occurrences Cipher 
+### 3. Occurrences Cipher
 
 Starting from the first character of the plaintext (at the position
 1), the message is encrypted as a sequence of strings separated by exactly 1 space:
+
 * each string has the form $$x-p_1 -...-p_k$$ where x is the first occurrence of each character present in the message
 * and $$p_1 ... p_k$$ are the k positions in which the character x appears in the message
 * each position is preceded by the separator character '-' (to distinguish the elements of the sequence of positions).
 
-#### For Example:
+For Example:
 
 $$ Pt = "example\ 1" $$
 
@@ -73,13 +75,13 @@ $$ ct = "e-1-7\ x-2\ a-3\ m-4\ p-5\ l-6\ \ -8\ 1-9"$$
 
 Each possible ASCII symbol is mapped to another ASCII symbol according to a certain function defined by cases. It requires that the single ASCII characters $$c_i$$ of the string to be encoded belong to the reduced encoding $$ (0 ≤ cod (c_i) ≤ 127)$$
 
-* If the character is a lowercase letter, it is replaced with the uppercase equivalent of the reverse alphabet. $$ Z = ct (a), A = ct (z) $$ 
+* If the character is a lowercase letter, it is replaced with the uppercase equivalent of the reverse alphabet. $$ Z = ct (a), A = ct (z) $$
 * If the character is an uppercase letter, it is replaced with the lowercase equivalent of the reverse alphabet. $$ z = ct (A), y = ct (B), a = ct (Z) $$
-* If the character is a number. 
+* If the character is a number.
 $$ ct (num) = ASCII (cod (9) - num) $$
 * In all other cases (sym), remains unchanged,  $$ ct (sym) = sym $$
 
-#### For Example:
+For Example:
 
 $$ Pt = "myStr0ng P4ssW_"$$
 
@@ -88,12 +90,13 @@ Pt|m|y|S|t|r|0|n|g| |P|4|s|s|W|_|
 Type$$c_i$$| low| low| upp| low| low| num| low| low| sym| upp| num| low| low| upp|sym|
 ct|N|B|h|G|I|‚|M|T| |k|©|H|H|d|_|
 
-
 ## Configuration
-The program allows you to encrypt and decrypt a text message (plaintext) provided by the user as a string type myplaintext variable (.string in RIPES). 
+
+The program allows you to encrypt and decrypt a text message (plaintext) provided by the user as a string type myplaintext variable (.string in RIPES).
+
 * A. Substitute cipher / Caesar cipher
 * B. Block cipher
-* C. Occurrences Cipher 
+* C. Occurrences Cipher
 * D. Dictionary encryption
 
 In addition to the variable myplaintext (maximum size 100 characters, characters c which can only be such that 32 ≤ cod (c) ≤ 127 to avoid special ASCII characters), the program requires an additional input that specifies how to apply the ciphers. This mycypher variable is a string S = "S_1...S_n" made up of a maximum of 5 characters (therefore with 1≤n≤5), where each character S i (with 1≤i≤n) corresponds to one of the characters 'A', 'B', 'C', 'D', and identifies the cipher to be applied to the message. The order of the ciphers is therefore established by the order in which the characters appear in the string. Furthermore, each cipher returns a cyphertext which is a sequence of characters c, 32 ≤ cod (c) ≤ 127.
