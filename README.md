@@ -21,10 +21,8 @@
       <ul>
         <li><a href="#substitute-cipher">Substitute cipher / Caesar cipher</a></li>
         <li><a href="#block-cipher">Block cipher</a></li>
-      </ul>
-      <li><a href="#occurrences-cipher">Occurrences cipher</a></li>
-      </ul>
-      <li><a href="#dictionary-encryption">Dictionary encryption</a></li>
+        <li><a href="#occurrences-cipher">Occurrences cipher</a></li>
+        <li><a href="#dictionary-encryption">Dictionary encryption</a></li>
       </ul>
     </li>
     <li><a href="#running-instructions">Running instructions</a></li>
