@@ -1,11 +1,40 @@
-# Computer Architectures Project
+# 
 
-This repository contains the implementation for the laboratory project of Computer Architectures class at the University of Florence
 
-# Usage
 
-In order to run the source
-code, download version v2.1.0 of the Ripes simuletor on the relative [github page](https://github.com/mortbopet/Ripes/releases/tag/v2.1.0) build for the [RISC-V instruction set architecture](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf).
+<br />
+<div align="center">
+  <h3 align="center">Computer Architectures Project</h3>
+  <p align="center">
+    This repository contains the implementation for the laboratory project of Computer Architectures class at the University of Florence
+  </p>
+</div>
+
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+    </li>
+    <li>
+      <a href="#description">Description of the ciphers</a>
+      <ul>
+        <li><a href="#substitute-cipher">Substitute cipher / Caesar cipher</a></li>
+        <li><a href="#block-cipher">Block cipher</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+# Getting Started
+
+In order to run the source code, download version v2.1.0 of the Ripes simuletor on the relative [github page](https://github.com/mortbopet/Ripes/releases/tag/v2.1.0) build for the [RISC-V instruction set architecture](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf).
 
 # Description of the ciphers
 
@@ -90,7 +119,7 @@ Pt|m|y|S|t|r|0|n|g| |P|4|s|s|W|_|
 Type$$c_i$$| low| low| upp| low| low| num| low| low| sym| upp| num| low| low| upp|sym|
 ct|N|B|h|G|I|‚|M|T| |k|©|H|H|d|_|
 
-## Configuration
+## Running instructions
 
 The program allows you to encrypt and decrypt a text message (plaintext) provided by the user as a string type myplaintext variable (.string in RIPES).
 
@@ -109,3 +138,7 @@ The program considers the variables myplaintext and mycypher, applying the speci
 
 You can have a look at both the project [assignment](doc/Project_Assignment_aa_19-20.pdf) and the written [report](doc/Report.pdf), but beware that they have been written in Italian.
 While all the souce code is well commented in English.
+
+## License
+
+Distributed under the GNU GENERAL PUBLIC LICENSE.  See [LICENSE.txt](LICENSE) for more information.
