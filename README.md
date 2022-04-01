@@ -46,7 +46,7 @@ Then, the standard 8-bit ASCII code of each character of the text message is cha
 
 For Example:
 
-(https://latex.codecogs.com/svg.image?pt=&space;LOVE&space;AssEMbLY&space;\&space;k&space;=&space;1&space;
+(https://latex.codecogs.com/svg.image?pt=&space;LOVE&space;AssEMbLY&space;\&space;k&space;=&space;1&space)
 
 |Pt|L|O|V|E| |A|s|s|E|M|b|L|Y|
 |--|-|-|-|-|-|-|-|-|-|-|-|-|-|
