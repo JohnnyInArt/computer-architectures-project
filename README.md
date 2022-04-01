@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-  <h3 align="center">Computer Architectures Project</h3>
+  <h1 align="center">Computer Architectures Project</h1>
   <p align="center">
     This repository contains the implementation for the laboratory project of Computer Architectures class at the University of Florence
   </p>
@@ -22,13 +22,15 @@
         <li><a href="#substitute-cipher">Substitute cipher / Caesar cipher</a></li>
         <li><a href="#block-cipher">Block cipher</a></li>
       </ul>
+      <li><a href="#occurrences-cipher">Occurrences cipher</a></li>
+      </ul>
+      <li><a href="#dictionary-encryption">Dictionary encryption</a></li>
+      </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#running-instructions">Running instructions</a></li>
+    <li><a href="#assignment-report">Assignment & report</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -80,7 +82,7 @@ Calculate Cod (O) = 79, Cod (L) = 76, Cod (E) = 69 by consulting the ASCII table
 |Cod(key)|79|76|69|79|76|69|79|76|
 |Cod(ct)|150|158|134|147|161|137|163|145
 
-### 3. Occurrences Cipher
+### 3. Occurrences cipher
 
 Starting from the first character of the plaintext (at the position
 1), the message is encrypted as a sequence of strings separated by exactly 1 space:
