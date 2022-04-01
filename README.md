@@ -32,13 +32,6 @@
 
 # Getting Started
 
-```LaTeX
-\newline
-2 + 2 = 4 \newline
-2 + 3 = 5 \newline
-\frac{2}{4} = 0.5
-```
-
 In order to run the source code, download version v2.1.0 of the Ripes simuletor on the relative [github page](https://github.com/mortbopet/Ripes/releases/tag/v2.1.0) build for the [RISC-V instruction set architecture](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf).
 
 # Description of the ciphers
@@ -51,18 +44,15 @@ It is a mono-alphabetic substitution cipher in which each letter of the plaintex
 
 Then, the standard 8-bit ASCII code of each character of the text message is changed by adding an integer constant K, modulo 256.
 
-```
 For Example:
 
-$$ pt= LOVE AssEMbLY \\  k = 1$$
+(https://latex.codecogs.com/svg.image?pt=&space;LOVE&space;AssEMbLY&space;\&space;k&space;=&space;1&space;
 
 |Pt|L|O|V|E| |A|s|s|E|M|b|L|Y|
 |--|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |Cod(pt)|76|79|86|69|32|65|115|115|69|77|98|76|89|
 |Cod(k)|77|80|87|70|32|66|116|116|70|78|99|77|90|
 |Ct|M|P|W|F| |B|t|t|F|N|c|M|Z|
-
-```
 
 ### Block cipher
 
@@ -75,7 +65,6 @@ $$ For\ each\ b_i\ in\ B(1 ≤ i ≤ nb) \\ cb_i = cod(b_{ij} ) + cod(key_j ), 1
 
 With cyphertext $$ ct = {cb_1, cb_2, ... cb_{nb}}$$ defined of nb blocks.
 
-```
 For Example:
 
 $$ pt= GRADUATE \\  key = OLE$$
@@ -88,7 +77,7 @@ Calculate Cod (O) = 79, Cod (L) = 76, Cod (E) = 69 by consulting the ASCII table
 |Key|O|L|E|O|L|E|O|L|
 |Cod(key)|79|76|69|79|76|69|79|76|
 |Cod(ct)|150|158|134|147|161|137|163|145
-```
+
 
 ### Occurrences cipher
 
@@ -99,7 +88,6 @@ Starting from the first character of the plaintext (at the position
 * and $$p_1 ... p_k$$ are the k positions in which the character x appears in the message
 * each position is preceded by the separator character '-' (to distinguish the elements of the sequence of positions).
 
-```
 For Example:
 
 $$ Pt = "example\ 1" $$
@@ -110,7 +98,7 @@ $$ ct = "e-1-7\ x-2\ a-3\ m-4\ p-5\ l-6\ \ -8\ 1-9"$$
 
 * In the string "-8" the encoded character is the space, which appears in position 8 of the message.
 * In the string "1-9 the encoded character is '1', which appears in position 9 of the message.
-```
+
 
 ### Dictionary encryption
 
@@ -122,7 +110,7 @@ Each possible ASCII symbol is mapped to another ASCII symbol according to a cert
 $$ ct (num) = ASCII (cod (9) - num) $$
 * In all other cases (sym), remains unchanged,  $$ ct (sym) = sym $$
 
-```
+
 For Example:
 
 $$ Pt = "myStr0ng P4ssW_"$$
@@ -131,7 +119,7 @@ Pt|m|y|S|t|r|0|n|g| |P|4|s|s|W|_|
 ----|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 Type$$c_i$$| low| low| upp| low| low| num| low| low| sym| upp| num| low| low| upp|sym|
 ct|N|B|h|G|I|‚|M|T| |k|©|H|H|d|_|
-```
+
 
 ## Running instructions
 
