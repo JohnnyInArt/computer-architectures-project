@@ -17,7 +17,7 @@
       <a href="#getting-started">Getting Started</a>
     </li>
     <li>
-      <a href="#description">Description of the ciphers</a>
+      <a href="#Description-of-the-ciphers">Description of the ciphers</a>
       <ul>
         <li><a href="#substitute-cipher">Substitute cipher / Caesar cipher</a></li>
         <li><a href="#block-cipher">Block cipher</a></li>
@@ -28,8 +28,7 @@
       </ul>
     </li>
     <li><a href="#running-instructions">Running instructions</a></li>
-    <li><a href="#assignment-report">Assignment & report</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#assignment-&-report">Assignment & report</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
