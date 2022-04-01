@@ -50,7 +50,10 @@ For Example:
 &frac34; &HilbertSpace; &DifferentialD;
 &ClockwiseContourIntegral; &ngE;
 
-**pt= LOVE AssEMbLY  k = 1**
+<p align="JUSTIFY"> A <sub>16</sub>
+</p>
+**pt= LOVE AssEMbLY**
+**k = 1**
 
 |Pt|L|O|V|E| |A|s|s|E|M|b|L|Y|
 |--|-|-|-|-|-|-|-|-|-|-|-|-|-|
@@ -64,7 +67,7 @@ A block cipher encrypts by considering m characters for the block to be encrypte
 
 The word is partitioned into nb blocks, obtained as nb = m / k rounded up to the integer.
 
-Each block in $$B = {b_1, b_2,...,b_{nb}}$$ contains at most k consecutive elements of the string to be encrypted. Each element of each block is encrypted by adding the ASCII encoding of a key character to the ASCII encoding of the character.
+Each block in $$B = {b1, b_2,...,b_{nb}}$$ contains at most k consecutive elements of the string to be encrypted. Each element of each block is encrypted by adding the ASCII encoding of a key character to the ASCII encoding of the character.
 
 For each b_i in B(1 ≤ i ≤ nb) cb_i = cod(b_{ij} ) + cod(key_j ), 1 ≤ j ≤ k $$
 
