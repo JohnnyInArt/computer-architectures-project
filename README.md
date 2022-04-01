@@ -159,4 +159,4 @@ While all the souce code is well commented in English.
 
 ## License
 
-Distributed under the GNU GENERAL PUBLIC LICENSE.  See [LICENSE.txt](LICENSE) for more information.
+Distributed under the GNU General Public License v3.0 . See [LICENSE.txt](LICENSE) for more information.
