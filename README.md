@@ -20,7 +20,7 @@
       <a href="#Description-of-the-ciphers">Description of the ciphers</a>
       <ul>
         <li><a href="#substitute-cipher">Substitute cipher / Caesar cipher</a></li>
-        <li><a href="#block-cipher">Block cipher</a></li>
+        <li><a href="#2.-block-cipher">2. Block cipher</a></li>
         <li><a href="#occurrences-cipher">Occurrences cipher</a></li>
         <li><a href="#dictionary-encryption">Dictionary encryption</a></li>
       </ul>
