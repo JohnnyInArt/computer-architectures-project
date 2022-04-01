@@ -72,7 +72,7 @@ The word is partitioned into nb blocks, obtained as nb = m/k rounded up to the i
 
 For Example:
 
-***pt= GRADUATE \\ key = OLE***
+***pt= GRADUATE key = OLE***
 
 Calculate Cod (O) = 79, Cod (L) = 76, Cod (E) = 69 by consulting the ASCII table
 
@@ -130,22 +130,21 @@ Each possible ASCII symbol is mapped to another ASCII symbol according to a cert
 
 For Example:
 
-**Pt = "myStr0ng P4ssW_"**
+***Pt = "myStr0ng P4ssW_"***
 
 Pt|m|y|S|t|r|0|n|g| |P|4|s|s|W|_|
 ----|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-Type c| low| low| upp| low| low| num| low| low| sym| upp| num| low| low| upp|sym|
+Type| low| low| upp| low| low| num| low| low| sym| upp| num| low| low| upp|sym|
 ct|N|B|h|G|I|‚|M|T| |k|©|H|H|d|_|
-
 
 ## Running instructions
 
 The program allows you to encrypt and decrypt a text message (plaintext) provided by the user as a string type myplaintext variable (.string in RIPES).
 
-* A. Substitute cipher / Caesar cipher
-* B. Block cipher
-* C. Occurrences Cipher
-* D. Dictionary encryption
+* A: Substitute cipher / Caesar cipher
+* B: Block cipher
+* C: Occurrences Cipher
+* D: Dictionary encryption
 
 In addition to the variable myplaintext (maximum size 100 characters, characters c which can only be such that 32 ≤ cod (c) ≤ 127 to avoid special ASCII characters), the program requires an additional input that specifies how to apply the ciphers. This mycypher variable is a string S = "S_1...S_n" made up of a maximum of 5 characters (therefore with 1≤n≤5), where each character S i (with 1≤i≤n) corresponds to one of the characters 'A', 'B', 'C', 'D', and identifies the cipher to be applied to the message. The order of the ciphers is therefore established by the order in which the characters appear in the string. Furthermore, each cipher returns a cyphertext which is a sequence of characters c, 32 ≤ cod (c) ≤ 127.
 
