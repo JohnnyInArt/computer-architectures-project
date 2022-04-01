@@ -89,10 +89,19 @@ Calculate Cod (O) = 79, Cod (L) = 76, Cod (E) = 69 by consulting the ASCII table
 Starting from the first character of the plaintext (at the position
 1), the message is encrypted as a sequence of strings separated by exactly 1 space:
 <p>
-  * each string has the form x-p<sub>1</sub> -...-p<sub>k</sub> where x is the first occurrence of each character present in the message
-  * and p<sub>1</sub> ... p<sub>k</sub> are the k positions in which the character x appears in the message
-  * each position is preceded by the separator character '-' (to distinguish the elements of the sequence of positions).
+  <ul>
+    <li>
+      each string has the form x-p<sub>1</sub> -...-p<sub>k</sub> where x is the first occurrence of each character present in the message
+    </li>
+    <li> 
+      and p<sub>1</sub> ... p<sub>k</sub> are the k positions in which the character x appears in the message
+    </li>
+  <li>
+    each position is preceded by the separator character '-' (to distinguish the elements of the sequence of positions)
+  </li>
+  </ul>
 </p>
+
 For Example:
 
 **Pt = "example 1"**
