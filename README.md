@@ -44,11 +44,10 @@ It is a mono-alphabetic substitution cipher in which each letter of the plaintex
 
 Then, the standard 8-bit ASCII code of each character of the text message is changed by adding an integer constant K, modulo 256.
 
-#### For Example:
-
+For Example:
 
 ***pt= LOVE AssEMbLY***
-  ***k = 1***
+***k = 1***
 
 |Pt|L|O|V|E| |A|s|s|E|M|b|L|Y|
 |--|-|-|-|-|-|-|-|-|-|-|-|-|-|
@@ -73,7 +72,7 @@ The word is partitioned into nb blocks, obtained as nb = m/k rounded up to the i
 
 For Example:
 
-**pt= GRADUATE  key = OLE**
+***pt= GRADUATE \\ key = OLE***
 
 Calculate Cod (O) = 79, Cod (L) = 76, Cod (E) = 69 by consulting the ASCII table
 
