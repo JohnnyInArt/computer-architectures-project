@@ -4,6 +4,9 @@
   <p>
     This repository contains the implementation for the laboratory project of Computer Architectures class at the University of Florence
   </p>
+  <p align="center">
+    <img src="https://github.com/JohnnyInArt/computer-architectures-project/blob/main/resources/images/animation.gif" />
+</p>
 </div>
 
 <details>
