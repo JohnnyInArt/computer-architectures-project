@@ -5,7 +5,7 @@
     This repository contains the implementation for the laboratory project of Computer Architectures class at the University of Florence
   </p>
   <p align="center">
-    <img src="resources/img/animation.gif" />
+    <img src="resources/images/animation.gif" />
 </p>
 </div>
 
@@ -45,8 +45,12 @@ It is a mono-alphabetic substitution cipher in which each letter of the plaintex
 Then, the standard 8-bit ASCII code of each character of the text message is changed by adding an integer constant K, modulo 256.
 
 For Example:
-[\sum_{\forall i}{x_i^{2}}](https://latex.codecogs.com/svg.latex?%5Csum_%7B%5Cforall+i%7D%7Bx_i%5E%7B2%7D%7D)
-(https://latex.codecogs.com/svg.image?pt=&space;LOVE&space;AssEMbLY&space;\&space;k&space;=&space;1&space)
+
+&nbsp; &amp; &copy; &AElig; &Dcaron;
+&frac34; &HilbertSpace; &DifferentialD;
+&ClockwiseContourIntegral; &ngE;
+
+**pt= LOVE AssEMbLY  k = 1**
 
 |Pt|L|O|V|E| |A|s|s|E|M|b|L|Y|
 |--|-|-|-|-|-|-|-|-|-|-|-|-|-|
@@ -61,13 +65,16 @@ A block cipher encrypts by considering m characters for the block to be encrypte
 The word is partitioned into nb blocks, obtained as nb = m / k rounded up to the integer.
 
 Each block in $$B = {b_1, b_2,...,b_{nb}}$$ contains at most k consecutive elements of the string to be encrypted. Each element of each block is encrypted by adding the ASCII encoding of a key character to the ASCII encoding of the character.
-$$ For\ each\ b_i\ in\ B(1 ≤ i ≤ nb) \\ cb_i = cod(b_{ij} ) + cod(key_j ), 1 ≤ j ≤ k $$
 
-With cyphertext $$ ct = {cb_1, cb_2, ... cb_{nb}}$$ defined of nb blocks.
+For each b_i in B(1 ≤ i ≤ nb) cb_i = cod(b_{ij} ) + cod(key_j ), 1 ≤ j ≤ k $$
+
+With cyphertext
+ $$ ct = {cb_1, cb_2, ... cb_{nb}}$$ 
+defined of nb blocks.
 
 For Example:
 
-$$ pt= GRADUATE \\  key = OLE$$
+**pt= GRADUATE  key = OLE**
 
 Calculate Cod (O) = 79, Cod (L) = 76, Cod (E) = 69 by consulting the ASCII table
 
