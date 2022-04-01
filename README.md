@@ -44,11 +44,11 @@ It is a mono-alphabetic substitution cipher in which each letter of the plaintex
 
 Then, the standard 8-bit ASCII code of each character of the text message is changed by adding an integer constant K, modulo 256.
 
-For Example:
+#### For Example:
 
 
-**pt= LOVE AssEMbLY**
-**k = 1**
+***pt= LOVE AssEMbLY***
+  ***k = 1***
 
 |Pt|L|O|V|E| |A|s|s|E|M|b|L|Y|
 |--|-|-|-|-|-|-|-|-|-|-|-|-|-|
@@ -104,11 +104,11 @@ Starting from the first character of the plaintext (at the position
 
 For Example:
 
-**Pt = "example 1"**
+***Pt = "example 1"***
 
 Encrypting with this algorithm will produce the cyphertext:
 
-**ct = "e-1-7 x-2 a-3 m-4 p-5 l-6  -8 1-9"**
+***ct = "e-1-7 x-2 a-3 m-4 p-5 l-6  -8 1-9"***
 
 * In the string "-8" the encoded character is the space, which appears in position 8 of the message.
 * In the string "1-9 the encoded character is '1', which appears in position 9 of the message.
