@@ -45,7 +45,7 @@ It is a mono-alphabetic substitution cipher in which each letter of the plaintex
 Then, the standard 8-bit ASCII code of each character of the text message is changed by adding an integer constant K, modulo 256.
 
 For Example:
-
+[\sum_{\forall i}{x_i^{2}}](https://latex.codecogs.com/svg.latex?%5Csum_%7B%5Cforall+i%7D%7Bx_i%5E%7B2%7D%7D)
 (https://latex.codecogs.com/svg.image?pt=&space;LOVE&space;AssEMbLY&space;\&space;k&space;=&space;1&space)
 
 |Pt|L|O|V|E| |A|s|s|E|M|b|L|Y|
