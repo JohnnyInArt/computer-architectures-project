@@ -60,24 +60,16 @@ For Example:
 
 A block cipher encrypts by considering m characters for the block to be encrypted and k characters for the key to be used during encryption, returning m  characters in output for the cyphertext.
 
-The word is partitioned into nb blocks, obtained as nb = m / k rounded up to the integer.
+The word is partitioned into nb blocks, obtained as nb = m/k rounded up to the integer.
 
-Each block in
-<p align="JUSTIFY"> {b
-   <sub>1</sub>
-   ,b
-   <sub>2</sub>
-   ,b
-   <sub>nb</sub>
-    }
+
+<p> 
+  Each block in {b <sub>1</sub> ,b <sub>2</sub> ,b <sub>n
+  </sub> } contains at most k consecutive elements of the string to be encrypted. Each element of each block is encrypted by adding the ASCII encoding of a key character to the ASCII encoding of the character.
+  For each b<sub>i</sub> in B(1 ≤ i ≤ nb) cb<sub>i</sub> = cod(b<sub>ij</sub>} ) + cod(key<sub>j</sub> ), 1 ≤ j ≤ k
 </p> 
-$$B = {b1, b_2,...,b_{nb}}$$ contains at most k consecutive elements of the string to be encrypted. Each element of each block is encrypted by adding the ASCII encoding of a key character to the ASCII encoding of the character.
-
-For each b_i in B(1 ≤ i ≤ nb) cb_i = cod(b_{ij} ) + cod(key_j ), 1 ≤ j ≤ k $$
-
-With cyphertext
- $$ ct = {cb_1, cb_2, ... cb_{nb}}$$ 
-defined of nb blocks.
+<p> With cyphertext ct = {cb<sub>1</sub>, cb<sub>2</sub>, ... cb<sub>nb</sub>} defined of nb blocks.
+</P>
 
 For Example:
 
@@ -92,46 +84,49 @@ Calculate Cod (O) = 79, Cod (L) = 76, Cod (E) = 69 by consulting the ASCII table
 |Cod(key)|79|76|69|79|76|69|79|76|
 |Cod(ct)|150|158|134|147|161|137|163|145
 
-
 ### Occurrences cipher
 
 Starting from the first character of the plaintext (at the position
 1), the message is encrypted as a sequence of strings separated by exactly 1 space:
-
-* each string has the form $$x-p_1 -...-p_k$$ where x is the first occurrence of each character present in the message
-* and $$p_1 ... p_k$$ are the k positions in which the character x appears in the message
-* each position is preceded by the separator character '-' (to distinguish the elements of the sequence of positions).
-
+<p>
+  * each string has the form x-p<sub>1</sub> -...-p<sub>k</sub> where x is the first occurrence of each character present in the message
+  * and p<sub>1</sub> ... p<sub>k</sub> are the k positions in which the character x appears in the message
+  * each position is preceded by the separator character '-' (to distinguish the elements of the sequence of positions).
+</p>
 For Example:
 
-$$ Pt = "example\ 1" $$
+**Pt = "example 1"**
 
 Encrypting with this algorithm will produce the cyphertext:
 
-$$ ct = "e-1-7\ x-2\ a-3\ m-4\ p-5\ l-6\ \ -8\ 1-9"$$
+**ct = "e-1-7 x-2 a-3 m-4 p-5 l-6  -8 1-9"**
 
 * In the string "-8" the encoded character is the space, which appears in position 8 of the message.
 * In the string "1-9 the encoded character is '1', which appears in position 9 of the message.
 
 
 ### Dictionary encryption
+<p>
+Each possible ASCII symbol is mapped to another ASCII symbol according to a certain function defined by cases. It requires that the single ASCII characters c<sub>i</sub> of the string to be encoded belong to the reduced encoding (0 ≤ cod (c<sub>i</sub>) ≤ 127)
+</p>
 
-Each possible ASCII symbol is mapped to another ASCII symbol according to a certain function defined by cases. It requires that the single ASCII characters $$c_i$$ of the string to be encoded belong to the reduced encoding $$ (0 ≤ cod (c_i) ≤ 127)$$
-
-* If the character is a lowercase letter, it is replaced with the uppercase equivalent of the reverse alphabet. $$ Z = ct (a), A = ct (z) $$
-* If the character is an uppercase letter, it is replaced with the lowercase equivalent of the reverse alphabet. $$ z = ct (A), y = ct (B), a = ct (Z) $$
+* If the character is a lowercase letter(low), it is replaced with the uppercase equivalent of the reverse alphabet. 
+  **Z = ct (a), A = ct (z)**
+* If the character is an uppercase letter(upp), it is replaced with the lowercase equivalent of the reverse alphabet. 
+  **z = ct (A), y = ct (B), a = ct (Z)**
 * If the character is a number.
-$$ ct (num) = ASCII (cod (9) - num) $$
-* In all other cases (sym), remains unchanged,  $$ ct (sym) = sym $$
+  **ct (num) = ASCII (cod (9) - num)**
+* In all other cases (sym), remains unchanged, 
+  **ct (sym) = sym**
 
 
 For Example:
 
-$$ Pt = "myStr0ng P4ssW_"$$
+**Pt = "myStr0ng P4ssW_"**
 
 Pt|m|y|S|t|r|0|n|g| |P|4|s|s|W|_|
 ----|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-Type$$c_i$$| low| low| upp| low| low| num| low| low| sym| upp| num| low| low| upp|sym|
+Type c| low| low| upp| low| low| num| low| low| sym| upp| num| low| low| upp|sym|
 ct|N|B|h|G|I|‚|M|T| |k|©|H|H|d|_|
 
 
