@@ -155,7 +155,7 @@ The program considers the variables myplaintext and mycypher, applying the speci
 ## Assignment and report
 
 You can have a look at both the project [assignment](doc/Project_Assignment_aa_19-20.pdf) and the written [report](doc/Report.pdf), but beware that they have been written in Italian.
-While all the souce code is well commented in English.
+While all the source code is well commented in English.
 
 ## License
 
